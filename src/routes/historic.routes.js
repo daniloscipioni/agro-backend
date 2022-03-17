@@ -1,17 +1,21 @@
-// @ts-nocheck
 /**
- * Arquivo: src/routes/machine.routes.js
+ * Arquivo: src/routes/historic.routes.js
  * Descrição: arquivo responsável pelas rotas da api relacionado a classe 'Machine'.
- * Data: 04/03/2020
- * Author Glaucia Lemos
+ * Data: 17/03/2022
+ * Danilo Scipioni
  */
 
 const router = require('express-promise-router')();
 const historicController = require('../controllers/historic.controller');
 
-// ==> Definindo as rotas do CRUD - 'Product':
-
-// ==> Rota responsável por criar um novo 'Product': (POST): localhost:3000/api/products
+/**
+ * GET /api/historic
+ * @summary Returns a list of machine historic.
+ * @description Optional extended description in CommonMark or HTML.
+ * @tag Historic
+ * @response 200 - A JSON array of user names
+ * @responseContent {string[]} 200.application/json
+ */
 router.get('/historic', historicController.listAllHistoric);
 
 module.exports = router;

@@ -1,0 +1,28 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "EasyAgro Backend",
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "host": "easy-agro-backend",
+  "basePath": "/v1",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "components": {
+    "schemas": {
+      "Historic": {
+        "type": "object"
+      }
+    }
+  }
+}
